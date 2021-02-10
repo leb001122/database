@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Memo_Controller">
+   <children>
+      <Label layoutX="147.0" layoutY="19.0" text="MEMO">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="memo" layoutX="39.0" layoutY="51.0" prefHeight="163.0" prefWidth="268.0" />
+      <Button fx:id="add" layoutX="85.0" layoutY="227.0" mnemonicParsing="false" onAction="#handle" text="Add" />
+      <Button fx:id="logout" layoutX="201.0" layoutY="225.0" mnemonicParsing="false" onAction="#handle" text="Log out" />
+   </children>
+</Pane>
