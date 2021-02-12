@@ -8,6 +8,9 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="137.0" layoutY="27.0" text="MyMemo" />
+      <Label layoutX="151.0" layoutY="37.0" text="MEMO" />
+      <Label layoutX="57.0" layoutY="99.0" text="ID" />
+      <TextField fx:id="id" layoutX="111.0" layoutY="94.0" />
+      <PasswordField fx:id="pw" layoutX="111.0" layoutY="141.0" />
    </children>
 </Pane>

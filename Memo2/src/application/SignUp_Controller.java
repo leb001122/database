@@ -34,12 +34,10 @@ public class SignUp_Controller {
     void handle(ActionEvent event) throws IOException  {
     	
     	if(event.getSource() == ok) {
-    		
     		String inputName = name.getText();
     		String inputId = id.getText();
     		String inputPw = pw.getText();
-    		new UserDAO().signUp(inputName, inputId, inputPw);
-    		UserInfo user = new UserInfo(inputName, inputId, inputPw);
+    		new UserDAO().signUp(inputName, inputId, inputPw);   		
     		loadPage();
     	}
     	else if(event.getSource() == back) {
@@ -49,9 +47,8 @@ public class SignUp_Controller {
     }
     void loadPage() throws IOException {
     	Stage primaryStage = new Stage();
-		Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("SignInPage.fxml"));
 		Scene scene = new Scene(root,340,268);
-		primaryStage.setScene(scene);
 		primaryStage.setScene(scene);
 		primaryStage.show();
     }

@@ -34,9 +34,13 @@ public class SignIn_Controller {
         	String s = "";
         	
         	if(new UserDAO().signIn(inputId, inputPw) == 1) {
-        		s = "로그인";
-        		loadPage("MemoPage.fxml");
-    
+        		s = "로그인성공";
+        		
+        		UserInfo user = new UserInfo(inputId);
+        	
+        		
+        		loadPage("TabPane.fxml");
+        		
         	}
         	else 
         		s = "로그인 실패";
@@ -52,9 +56,11 @@ public class SignIn_Controller {
 		Parent root = FXMLLoader.load(getClass().getResource(fxmlAddress));
 		Scene scene = new Scene(root,340,268);
 		primaryStage.setScene(scene);
-		primaryStage.setScene(scene);
 		primaryStage.show();
     }
-
+    
+    void user(String id) {
+    	
+    }
 
 }

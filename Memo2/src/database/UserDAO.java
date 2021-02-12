@@ -61,7 +61,6 @@ public class UserDAO {
 					return 1; //로그인 성공
 				else  
 					return 0; //로그인 실패
-					
 			}
 			return -1; //아이디 없음
 		} catch (SQLException e) {

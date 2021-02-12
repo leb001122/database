@@ -12,7 +12,6 @@ public class Main extends Application {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
 			Scene scene = new Scene(root,340,268);
-			primaryStage.setTitle("Memo");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
