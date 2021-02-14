@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Home_Controller">
+  <tabs>
+    <Tab fx:id="userInfo" onSelectionChanged="#event" text="User Info">
+         <content>
+            <Pane prefHeight="366.0" prefWidth="600.0">
+               <children>
+                  <ImageView fitHeight="366.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Users/EunBin/Downloads/핑크풋바탕July07-6-3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="138.0" layoutY="143.0" text="NAME : ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="174.0" layoutY="201.0" text="ID : ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="name" layoutX="219.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="204.6513671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="id" layoutX="216.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black;" textAlignment="CENTER" wrappingWidth="209.6513671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="edit" layoutX="263.0" layoutY="279.0" mnemonicParsing="false" onAction="#edit_handle" text="Edit">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+    <Tab text="New Memo">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="338.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Users/EunBin/Downloads/ECA3D8FC-C465-4103-AC59-B0AA0CDB70A8.jpeg" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="text" layoutX="78.0" layoutY="22.0" prefHeight="285.0" prefWidth="437.0" style="-fx-border-style: solid; -fx-border-color: black; -fx-border-width: 1;" />
+                  <Button fx:id="add" layoutX="536.0" layoutY="22.0" mnemonicParsing="false" onAction="#add_handle" text="Add" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+      <Tab fx:id="memoList" onSelectionChanged="#event" text="Memo List">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="337.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Users/EunBin/Downloads/200205_pc%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="list" editable="false" layoutX="42.0" layoutY="36.0" prefHeight="223.0" prefWidth="346.0" />
+               </children></Pane>
+         </content>
+      </Tab>
+      <Tab text="Sign Out">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="336.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Users/EunBin/Downloads/토끼.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="yes" layoutX="288.0" layoutY="293.0" mnemonicParsing="false" onAction="#yes_handle" text="Yes" />
+                  <Text layoutX="166.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="로그아웃 하시겠습니까?">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

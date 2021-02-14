@@ -1,9 +1,4 @@
-module Memo2 {
-	exports application;
-	exports database;
-	
-	opens application;
-	
+module MemoProject {
 	requires javafx.base;
 	requires javafx.controls;
 	requires javafx.fxml;
@@ -13,4 +8,10 @@ module Memo2 {
 	requires javafx.swt;
 	requires javafx.web;
 	requires java.sql;
+
+
+	opens application;
+	
+	exports application;
+	exports database;
 }
